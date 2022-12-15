@@ -24,7 +24,7 @@ func Message(title string, message string, color string) {
 	titleColor := c.New(c.FgBlack)
 	messageColor := c.New(c.Italic)
 
-	switch color {
+	switch strings.ToLower(color) {
 
 	case "black":
 		titleColor.Add(c.BgBlack, c.FgWhite)
