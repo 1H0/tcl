@@ -38,6 +38,7 @@
     - [Rulers](#rulers)
     - [Text](#text)
     - [Titles](#titles)
+    - [Tables](#tables)
   - [ToDo](#todo)
   - [Credits](#credits)
   - [License](#license)
@@ -186,12 +187,24 @@ tcl.SubTitle("The subtitle")
 
 ![titles](https://user-images.githubusercontent.com/37246258/172071930-41e9ed3b-6ca0-4f69-bd7a-27dfb4ff824f.png)
 
+### Tables
+
+```go
+tcl.Table([]string{"Col 1", "Col 2", "Col 3"}, [][]string{
+  {"Lorem", "Ipsum", "Dolor"},
+  {"Lorem", "Ipsum", "Dolor"},
+  {"Lorem", "Ipsum", "Dolor"},
+})
+```
+
+![Tables](https://user-images.githubusercontent.com/37246258/207857387-2e4a4cad-297b-4063-9931-42bf502bce72.png)
+
 ## ToDo
 
 - [x] Nested Lists
 - [ ] Tests
 - [ ] Ability to loop over Struct and print entrys as key-value pairs
-- [ ] Tables
+- [x] Tables
 - [ ] Customizable Colors and other settings like indentation
 
 ## Credits
