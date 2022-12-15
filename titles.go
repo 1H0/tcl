@@ -12,6 +12,7 @@ import (
 func Title(title string) {
 	titleColor := c.New(c.BgBlue, c.FgBlack, c.Bold)
 
+	NewLines(1)
 	indent(0)
 	titleColor.Printf("  %s  ", strings.ToUpper(title))
 	NewLines(2)
@@ -25,6 +26,7 @@ func TitleC(title string) {
 
 	leftOffset := (width - len(title)) / 2
 
+	NewLines(1)
 	indent(0)
 	fmt.Print(strings.Repeat(" ", leftOffset))
 	titleColor.Printf("  %s  ", strings.ToUpper(title))
@@ -35,6 +37,7 @@ func TitleC(title string) {
 func SubTitle(title string) {
 	titleColor := c.New(c.FgBlue, c.Bold, c.Underline)
 
+	NewLines(1)
 	indent(0)
 	titleColor.Print(title)
 	NewLines(1)
@@ -45,6 +48,7 @@ func FullTitle(title string) {
 	width, _, _ := terminal.GetSize(0)
 	titleColor := c.New(c.BgBlue, c.FgBlack, c.Bold)
 
+	NewLines(1)
 	indent(0)
 	titleColor.Printf("  %s", strings.ToUpper(title))
 	titleColor.Print(strings.Repeat(" ", width-len(title)-6))

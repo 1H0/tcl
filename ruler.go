@@ -18,6 +18,6 @@ func Ruler(c string) {
 	}
 
 	rulerColor.Print(strings.Repeat(c, width/len(c)))
-	NewLines(2)
+	NewLines(1)
 
 }

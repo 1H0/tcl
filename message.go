@@ -46,6 +46,7 @@ func Message(title string, message string, color string) {
 		titleColor.Add(c.BgWhite)
 	}
 
+	NewLines(1)
 	indent(0)
 	titleColor.Printf(" %s ", strings.ToUpper(title))
 	messageColor.Printf(" > %s\n", message)
